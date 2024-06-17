@@ -62,4 +62,6 @@ Branch: a branch is a copy of a codeline (basically a timeline), it makes it eas
 
 Remote: the data is stored in the cloud and can be accesed from another device 
 
+Stage: allows 
 
+Fetch: the retrieval (Abruf) of data, the data is moved to an alternate location 
