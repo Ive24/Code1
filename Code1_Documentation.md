@@ -17,7 +17,7 @@ How does Git work?
 -	It only add data and doesn`t delet it 
 -	3 conditions
     - Comitted (the files are safed in the local data base)
-    - Staged (vorgemerkt, a changed file that is staged fort he next commit) 
+    - Staged (vorgemerkt, a changed file that is staged for the next commit) 
     - Modified (changed files that aren`t safed yet) 
 -	Index with the staged data for former use 
 -	Work flow
@@ -62,7 +62,7 @@ Branch: a branch is a copy of a codeline (basically a timeline), it makes it eas
 
 Remote: the data is stored in the cloud and can be accesed from another device 
 
-Stage: allows us to test and demonstrate our code in a stage environment (it's as similar as possible to the actual production environment), this can also help us to find and fix any issues that might come up
+Stage: (vorgemerkt) a changed file that is ready for the next commit
 
 Fetch: the retrieval (Abruf) of data, the data is moved to an alternate location 
 
