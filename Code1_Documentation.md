@@ -16,14 +16,14 @@ How does Git work?
 -	It only needs local data and ressources to work 
 -	It only add data and doesn`t delet it 
 -	3 conditions
-  * Comitted (the files are safed in the local data base)
-  - Staged (vorgemerkt, a changed file that is staged fort he next commit) 
-  - Modified (changed files that aren`t safed yet) 
+    - Comitted (the files are safed in the local data base)
+    - Staged (vorgemerkt, a changed file that is staged fort he next commit) 
+    - Modified (changed files that aren`t safed yet) 
 -	Index with the staged data for former use 
 -	Work flow
-o	Change the files
-o	You stage some of the changed files you want to use in the index (staging-area)
-o	You commit the files in the index, which are now safed as a version of your project 
+    -	Change the files
+    -	You stage some of the changed files you want to use in the index (staging-area)
+    -	You commit the files in the index, which are now safed as a version of your project 
 -	Modified files are changed files that are not safed and not in the index
 
 Node.js
