@@ -1,7 +1,5 @@
 **Code 1 Diary**
 
-![pb]
-
 **Diary Entry 17.06.2024**
 
 **Thematic: Installation of the Software, Github**
