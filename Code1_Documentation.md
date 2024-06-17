@@ -1,5 +1,7 @@
 **Code 1 Diary**
 
+![pb]
+
 **Diary Entry 17.06.2024**
 
 **Thematic: Installation of the Software, Github**
@@ -47,5 +49,12 @@ Visual Studio Code is a source-code editor. It`s basically a text-editor.
 
 **GitHub**
 I created a repository to document my learning progress. In our team respository we document our project. 
+
+**Visual Studio Code**
+
+Repository:
+Commit:
+Branch: connect 
+Remote: 
 
 
