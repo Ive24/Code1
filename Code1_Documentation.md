@@ -54,7 +54,7 @@ I used VSC to clone my repository. Under source control i could connect it to my
 
 **Concepts and Vocabulary**
 
-Repository:
+Repository: 
 
 Commit:
 
