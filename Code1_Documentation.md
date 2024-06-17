@@ -2,9 +2,9 @@
 
 **Diary Entry 17.06.2024**
 
-**Thematic: Installation of the Software**
+**Thematic: Installation of the Software, Github**
 
-Git
+**Git**
 
 What is Git?
 -	It`s a version control system 
@@ -26,7 +26,7 @@ How does Git work?
     -	You commit the files in the index, which are now safed as a version of your project 
 -	Modified files are changed files that are not safed and not in the index
 
-Node.js
+**Node.js**
 
 What is node.js?
 -	It is a JavaScript runtime environment (cross-platform, open-source)
@@ -37,14 +37,15 @@ How node.js works:
 -	It runs in a single progress 
 -	It can be used outside of the browser
    
-TypeScript Compiler (tsc) 
+**TypeScript Compiler (tsc)**
 
 The TypeScript Compiler is used to transpile TypeScript code into JavaScript.
 
-Visual Studio Code (VSC)
+**Visual Studio Code (VSC)**
 
 Visual Studio Code is a source-code editor. It`s basically a text-editor. 
 
-
+**GitHub**
+I created a repository to document my learning progress. In our team respository we document our project. 
 
 
