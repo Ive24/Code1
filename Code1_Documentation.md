@@ -65,3 +65,5 @@ Remote: the data is stored in the cloud and can be accesed from another device
 Stage: allows us to test and demonstrate our code in a stage environment (it's as similar as possible to the actual production environment), this can also help us to find and fix any issues that might come up
 
 Fetch: the retrieval (Abruf) of data, the data is moved to an alternate location 
+
+Merge: means taking multiple goups of data and combine them into one unified set
