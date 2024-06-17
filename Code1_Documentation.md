@@ -67,3 +67,5 @@ Stage: (vorgemerkt) a changed file that is ready for the next commit
 Fetch: the retrieval (Abruf) of data, the data is moved to an alternate location 
 
 Merge: means taking multiple goups of data and combine them into one unified set
+
+
