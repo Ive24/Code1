@@ -50,7 +50,7 @@ I created a repository to document my learning progress. In our team respository
 
 **Visual Studio Code**
 
-I used VSC to clone my repository. 
+I used VSC to clone my repository. Under source control i could connect it to my github account and clone my documentation repository. 
 
 **Concepts and Vocabulary**
 
