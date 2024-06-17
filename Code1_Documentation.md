@@ -56,7 +56,7 @@ I used VSC to clone my repository.
 
 Repository: can contain multiple files, data and codes (you can store your data in it like in a chest)
 
-Commit: makes your temporary changes permanent
+Commit: an operation that makes your temporary changes permanent 
 
 Branch: a branch is a copy of a codeline (basically a timeline), it makes it easier to work parallel on a project (different peple can work on different branches of the same file and can bring them back together in the end), branches are independent lines of development (a string of commits)   
 
