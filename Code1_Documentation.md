@@ -50,9 +50,16 @@ I created a repository to document my learning progress. In our team respository
 
 **Visual Studio Code**
 
+I used VSC to clone my repository. 
+
+**Concepts and Vocabulary**
+
 Repository:
+
 Commit:
+
 Branch: connect 
+
 Remote: 
 
 
