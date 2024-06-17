@@ -1,4 +1,4 @@
-#**Code 1 Diary**#
+**Code 1 Diary**
 
 **Diary Entry 17.06.2024**
 
