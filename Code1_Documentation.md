@@ -50,15 +50,15 @@ I created a repository to document my learning progress. In our team respository
 
 **Visual Studio Code**
 
-I used VSC to clone my repository. Under source control i could connect it to my github account and clone my documentation repository. 
+I used VSC to clone my repository. 
 
 **Concepts and Vocabulary**
 
-Repository: 
+Repository: can contain multiple files, data and codes (like a chest)
 
-Commit:
+Commit: safes your data and sets them as your new version of the current code/file/project 
 
-Branch: connect 
+Branch: a timeline that shows the connection of different  
 
 Remote: 
 
