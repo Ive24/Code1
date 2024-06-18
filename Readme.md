@@ -4,4 +4,4 @@ The Link to my learning documentation:
 [LearningDiary](Code1_Diary.md)
 
 Links to the changed websites:
-[The new Länd](TheLänd.png) 
+[The new Länd](Images/TheLänd.png) 
