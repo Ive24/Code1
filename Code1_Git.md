@@ -68,3 +68,27 @@ Fetch: the retrieval (Abruf) of data, the data is moved to an alternate location
 
 Merge: means taking multiple goups of data and combine them into one unified set
 
+Modified: A file you changed, but not committed yet. 
+
+
+**Diary Entry 18.06.2024**
+
+**.gitignore**
+
+You can create a file with this name and put criterias in it for files or folders you want the program to ignore. 
+
+**Recording changes to my repository**
+
+Tracked and Untracked Files
+
+Each file in my repository is either tracked or untracked. The status tracked means that Git knows about that file. These are files that were in my last snapshot, newly staged files or modified files. Files with the status untracked are any files in my working directory that were not in the last snapshot ans aren't in my staging area. 
+
+If you want to start tracking a new file without commiting everything you've done before. It also stages the file. 
+
+Git Status 
+
+Shows you the state of the current file and which branch you are on. 
+
+
+
+
