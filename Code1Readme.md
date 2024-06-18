@@ -1,7 +1,5 @@
+Code 1 Flo
+
+The Link to my learning documentation: [LearningDiary](Code1_Diary)
+
 Links to my current work: 
-
-[The new Länd]()
-
-[Questions about the Apple Vision Pro]()
-
-[Football or something like that]() 
