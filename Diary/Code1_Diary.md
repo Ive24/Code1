@@ -79,4 +79,11 @@ Properties to change:
 - Color and Background color
 - position (absolute, fixed, relative, ...)
 
-
+Selectors
+- tag
+- id
+- class
+- attributes
+- pseudo
+- universal *
+- hirarchy 
