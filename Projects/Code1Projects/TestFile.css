@@ -26,7 +26,11 @@ div {
     display: inline-block;
     width: 20;
     height: 20;
-    position: relative;
+    width: 20;
+    height: 20;
+    top: 40%;
+    left: 25%;
+    position: absolute;
 }
 
 #Poet {
@@ -43,5 +47,9 @@ div {
 * {
     font-style: italic;
     display: block;
-    
+
+}
+
+:is(title, h1) {
+    font-size: 30px;
 }
