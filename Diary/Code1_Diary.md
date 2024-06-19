@@ -65,7 +65,18 @@ The structure of an html document
 HTML
 
 If you open the website in the browser, the browser creates a document object model of the page.
+HTML: Structure, content
+CSS: presentation
 
 CSS
 
 margin: how it is placed to other boxes
+
+cascading: if you don't change the style it is going to cascade to the next section 
+
+Properties to change:
+- Font-Size
+- Color and Background color
+- position (absolute, fixed, relative, ...)
+
+
