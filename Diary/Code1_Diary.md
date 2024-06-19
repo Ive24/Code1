@@ -60,3 +60,5 @@ The structure of an html document
 5. <title></title> sets the title of the page.
 6. <body></body> contains all the content the web users gonna see. 
 
+**Entry 19.06.24 Story, CSS**
+
