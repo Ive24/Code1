@@ -1,12 +1,47 @@
-h4{
+h4 {
     font-style: italic;
-    color: rgb(10, 59, 43);
+    color: rgb(8, 58, 115);
+    font-size: 50px;
 }
 
 body {
-    background-color: rgb(91, 91, 176);
+    background-color: rgba(119, 125, 151, 0.434);
+    margin: 0px;
 }
 
 div {
-    color: rgb(10, 112, 63);
+    display: inline-block;
+    background-color: bisque;
+    color: rgb(4, 25, 35);
+}
+
+#day {
+    color: darkslategray;
+    font-size: 25px;
+}
+
+#Kenobi {
+    color: rebeccapurple;
+    font-size: 25px;
+    display: inline-block;
+    width: 20;
+    height: 20;
+    position: relative;
+}
+
+#Poet {
+    color: darkred;
+    font-size: 25px;
+    display: block;
+    width: 20;
+    height: 20;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+* {
+    font-style: italic;
+    display: block;
+    
 }
