@@ -4,6 +4,10 @@ The Link to my learning documentation:
 
 [LearningDiary](Diary/Code1_Diary.md)
 
+Link to my Portfolio:
+
+[Portfolio](Projects/GitHubPages/Portfolio.html)
+
 Links to the changed websites:
 
 [The new Länd](Projects/Images/TheLänd.png) 
