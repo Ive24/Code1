@@ -1,0 +1,17 @@
+* {
+    background-color: rgba(25, 25, 112, 0.342);
+}
+
+h2 {
+    font-size: 25px;
+    color: rgb(96, 12, 96);
+    display: ruby-text;
+}
+
+p {
+    font-style: oblique;
+    color: gold;
+    font-size: 30px;
+    display: inline-table;
+}
+
