@@ -62,3 +62,10 @@ The structure of an html document
 
 **Entry 19.06.24 Story, CSS**
 
+HTML
+
+If you open the website in the browser, the browser creates a document object model of the page.
+
+CSS
+
+margin: how it is placed to other boxes
