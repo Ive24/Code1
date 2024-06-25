@@ -93,3 +93,11 @@ Selectors
 Primitiv data types Copy
 
 Complex data types reference
+
+define variables with let 
+
+do while loop
+
+while loop 
+
+for loop

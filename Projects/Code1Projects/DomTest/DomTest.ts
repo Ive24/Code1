@@ -3,21 +3,17 @@ console.log("hello");
 let spanElement: HTMLSpanElement = document.querySelector("span#idHello")!;
 spanElement.textContent = "World";
 
-let newSpan: HTMLSpanElement = document.createElement("span");
-newSpan.textContent = "Hello";
-document.body.appendChild(newSpan);
-newSpan.style.backgroundColor = "red";
+for (let i: number = 0, i < 10; i++){
+    console.log(i);
 
-console.log(newSpan);
-
-let i:number = 0;
-console.log(i);
-do {
-    i++
     let newSpan: HTMLSpanElement = document.createElement("span");
-newSpan.textContent = "Hello";
-document.body.appendChild(newSpan);
-newSpan.style.backgroundColor = "red";
-} while (i < 10)
+    newSpan.textContent = "Hello";
+    document.body.appendChild(newSpan);
+    newSpan.style.backgroundColor = "red";
 
-document.getElementsByClassName("Right").focus();
+    newSpan.addEventListener("click", hndClick);
+}
+
+function hndClick(_event: Event): void {
+  console.log(_event);
+}
