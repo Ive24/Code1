@@ -1,7 +1,7 @@
 console.log("hello");
 var spanElement = document.querySelector("span#idHello");
 spanElement.textContent = "World";
-for (var i = 0, i = void 0; ; i++) {
+for (var i = 0, i = void 0; i++;) {
     console.log(i);
     var newSpan = document.createElement("span");
     newSpan.textContent = "Hello";
