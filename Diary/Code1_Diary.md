@@ -1,6 +1,6 @@
-**Code 1 Diary** 
+**Code 1 HTML and CSS** 
 
-**Entry 18.06.24 HTML**
+**HTML**
 
 HTML (Hypertext Markup Language) determines the structure of web pages.
 
@@ -60,7 +60,7 @@ The structure of an html document
 5. <title></title> sets the title of the page.
 6. <body></body> contains all the content the web users gonna see. 
 
-**Entry 19.06.24 Story, CSS**
+**CSS**
 
 HTML
 
