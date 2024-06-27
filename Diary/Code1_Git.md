@@ -1,6 +1,4 @@
-**Code 1 Diary**
-
-**Diary Entry 17.06.2024**
+**Code 1 Git and node.js**
 
 **Thematic: Installation of the Software, Github**
 
