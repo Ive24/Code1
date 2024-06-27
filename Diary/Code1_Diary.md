@@ -6,7 +6,7 @@ HTML (Hypertext Markup Language) determines the structure of web pages.
 
 Hypertext 
 
-Text that is organized in order to connect related items, referst to links that connect web pages to one another (within a single website or between different ones)
+Text that is organized in order to connect related items, to links that connect web pages to one another (within a single website or between different ones)refers
 
 Markup
 
