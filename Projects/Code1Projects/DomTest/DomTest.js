@@ -1,14 +1,26 @@
 console.log("hello");
 var spanElement = document.querySelector("span#idHello");
 spanElement.textContent = "World";
-for (var i = 0, i = void 0; i++;) {
+for (var i = 0; i < 10; i++) {
     console.log(i);
     var newSpan = document.createElement("span");
     newSpan.textContent = "Hello";
     document.body.appendChild(newSpan);
     newSpan.style.backgroundColor = "red";
-    newSpan.addEventListener("click", hndClick);
 }
+document.body.addEventListener("click", hndClick);
 function hndClick(_event) {
-    console.log(_event);
+    console.log(_event.currentTarget);
+    var target = _event.target;
+    if (target == document.body)
+        return;
+    target.textContent = "World";
+    target.style.backgroundColor = "green";
 }
+var img = document.createElement("Dino.jpg");
+img.src = "Projects/Code1Projects/DomTest/Dino.jpg";
+element.addEventListener("click", ImgClick);
+function ImgClick() {
+    alert("Hello World!");
+}
+document.body.appendChild(img);
