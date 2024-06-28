@@ -1,17 +1,23 @@
-**Code 1 Flo**
+#**Code 1 Flo**
 
-The Link to my learning documentation:
+In this section you can find Links to different works i did alongside the Code 1 Module. In addition i created several files as my learning diary to split them thematically. 
 
-[LearningDiary](Diary/Code1_Diary.md)
+##The Learning Diary:
 
-Link to my Portfolio:
+ The Dictionary with a collection of different terms and commands i found to be useful to remember for me:
 
-[Portfolio](Projects/GitHubPages/Portfolio.html)
+ [Dictionary](Diary/Dictonary.html)
+
+ An overwiew of the basic html structure i created in case i forget something
+
+ [HTMLStructure](Diary/HTMLStructure.html)
+
+##Small Projects and Works i did in the module:
 
 Links to the changed websites:
 
-[The new Länd](Projects/Images/TheLänd.png) 
+[The new Länd](Projects/Screenshots of changed websites/TheLänd.png)
 
-[Football Chaos](Projects/Images/EMGrandPrix.png)
+[Football Chaos](Projects/Screenshots of changed websites/EMGrandPrix.png)
 
-[Apple Vision Questions](Projects/Images/AppleVisionFragen.png) 
+[Apple Vision Questions](Projects/Screenshots of changed websites/AppleVisionFragen.png) 
