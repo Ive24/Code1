@@ -24,13 +24,3 @@ function hndClick(_event: Event): void {
   target.textContent = "World"
   target.style.backgroundColor = "green"; 
 }
-
-let img = document.createElement("Dino.jpg");
-img.src = "Projects/Code1Projects/DomTest/Dino.jpg";
-element.addEventListener("click", ImgClick);
-
-function ImgClick() {
-  alert ("Hello World!");
-}
-document.body.appendChild(img); 
-
