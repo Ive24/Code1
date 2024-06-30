@@ -17,10 +17,3 @@ function hndClick(_event) {
     target.textContent = "World";
     target.style.backgroundColor = "green";
 }
-var img = document.createElement("Dino.jpg");
-img.src = "Projects/Code1Projects/DomTest/Dino.jpg";
-element.addEventListener("click", ImgClick);
-function ImgClick() {
-    alert("Hello World!");
-}
-document.body.appendChild(img);
