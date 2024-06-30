@@ -1,3 +1,53 @@
+html {
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #320010;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #c9d1ff;
+    padding: 0px 20px 20px 20px;
+    border: 5px solid black;
+}
+
 h1 {
-    color: rgb(67, 13, 134);
+    font-size: 55px;
+    margin: 0;
+    padding: 20px 0;
+    color: #541026;
+    text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 45px;
+    margin: 0px 0px 0px 0px;
+}
+
+h4 {
+     font-size: 40px;
+     margin: 0px 0px 0px 0px;
+}
+
+p, li, div {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 0px;
+}
+
+span {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
