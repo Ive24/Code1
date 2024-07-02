@@ -3,23 +3,23 @@ var ctx = canvas.getContext("2d");
 var gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 gradient.addColorStop(Math.random() * 0.5, "magenta");
 gradient.addColorStop(Math.random() * 0.5, "blue");
-gradient.addColorStop(Math.random() * 0.5, "red");
+gradient.addColorStop(Math.random() * 0.5, "white");
 ctx.fillStyle = gradient;
 var cloud1 = {
     name: "RoundCloud",
-    positionX: Math.random() * 100,
+    positionX: Math.random() * 500,
     positionY: Math.random() * 120,
     color: "transparent",
 };
 var cloud2 = {
     name: "LongCloud",
-    positionX: Math.random() * 350,
-    positionY: Math.random() * 300,
+    positionX: Math.random() * 150,
+    positionY: Math.random() * 500,
     color: "transparent",
 };
 var cloud3 = {
     name: "TinyCloud",
-    positionX: Math.random() * 590,
+    positionX: Math.random() * 790,
     positionY: Math.random() * 400,
     color: "transparent",
 };
@@ -39,13 +39,50 @@ function drawClouds() {
     }
 }
 drawClouds();
-function drawMountain() {
-    for (var m = 0; m < 5; m++) {
+var Bird1 = {
+    color: "grey",
+    positionX: 400,
+    positionY: 200,
+};
+var Bird2 = {
+    color: "darkgrey",
+    positionX: 500,
+    positionY: 150,
+};
+var Bird3 = {
+    color: "grey",
+    positionX: 60,
+    positionY: 300,
+};
+var birds = [Bird1, Bird2, Bird3];
+function drawBird() {
+    for (var m = 0; m < birds.length; m++) {
         var pathM = new Path2D;
-        pathM.rect(Math.random() * 500, 0, Math.random() * 400, Math.random() * 200);
-        ctx.fillStyle = "grey";
+        pathM.moveTo(birds[m].positionX * Math.random(), birds[m].positionY * Math.random());
+        pathM.bezierCurveTo(210, 250, 200, 100, 350, 400);
+        ctx.strokeStyle = "green";
+        ctx.stroke(pathM);
+        ctx.fillStyle = "black";
         ctx.fill(pathM);
     }
 }
+drawBird();
 drawMountain();
-drawBirds();
+var grad = ctx.createLinearGradient(0, 0, 0, 130);
+grad.addColorStop(0, "grey");
+grad.addColorStop(1, "blue");
+ctx.fillStyle = "grad";
+function drawMountain() {
+    var grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    grad.addColorStop(Math.random() * 0.5, "grey");
+    grad.addColorStop(Math.random() * 0.5, "black");
+    grad.addColorStop(Math.random() * 0.5, "white");
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.moveTo(800, 300);
+    ctx.lineTo(800, 800);
+    ctx.lineTo(300, 800);
+    ctx.lineTo(800, 300);
+    ctx.fillStyle = "grad";
+    ctx.fill();
+}
