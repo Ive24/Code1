@@ -14,3 +14,9 @@ function runEverySecond () {
         clearInterval(intervalID); 
 }
 
+function frame () {
+    console.log("every frame");
+    requestAnimationFrame(frame);
+}
+
+requestAnimationFrame(frame); 
