@@ -1,8 +1,6 @@
 const canvas: HTMLCanvasElement = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
-drawMountain();
-
 function drawMountain () {
     let grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
     grad.addColorStop(Math.random(), "grey");
@@ -75,129 +73,80 @@ function drawBird () {
     }
 }
      
+drawMountain();
 drawBird(); 
-createClouds(); 
 
 let imgData = ctx.getImageData (0, 0, canvas.width, canvas.height); 
 
 interface Cloud {
-    positionX: number,
-    positionY: number, 
-    size: number, 
+    x: number,
+    y: number,
+    scalex: number,
+    scaley: number,
+    color: string,
+
 }
 
-let clouds: Cloud[] = [];
+let clouds: Cloud [] = createClouds(5);
+drawClouds(); 
 
-function createClouds(): void {
-    for(let i: number = 0; i < 7; i++){
-        clouds.push({
-            positionX: Math.random()*600 + 20,
-            positionY: Math.random()*600 + 20,
-            size: Math.random()*20 + 5, 
-        })
-}}
+function createClouds (_amount: number) {
+    let clouds: Cloud [] = [];
+    for (let i: number = 0; i < _amount; i++) {
+        let cloud: Cloud = {
+        x: Math.random()*600,
+        y: Math.random()*600,
+        scalex: 50 + Math.random()*250,
+        scaley: Math.random()*80,
+        color: "white", 
+    }
+    clouds.push(cloud); 
+    console.log(clouds)
+}
+return clouds;
+}
 
-function createCloudParts() {
+function drawCloud (_cloud: Cloud): void {
+    let path: Path2D = new Path2D();
 
-} //cloud parts als transparente ellipsen dann screenchot dann färben 
-
-    let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(Math.random()*0.5, "magenta");
-    gradient.addColorStop(Math.random()*0.5, "blue");
-    gradient.addColorStop(Math.random()*0.5, "white");
-    ctx.fillStyle = gradient;
-
-
-// let cloud1 = {
-//     name: "RoundCloud",
-//     positionX: Math.random()*500,
-//     positionY: Math.random()*120,
-//     size: Math.random()*50,
-//     color: "transparent",  
-// }
-
-// let cloud2 = {
-//     name: "LongCloud",
-//     positionX: Math.random()*150,
-//     positionY: Math.random()*500,
-//     size: Math.random()*50,
-//     color: "transparent",  
-// }
-
-// let cloud3 = {
-//     name: "TinyCloud",
-//     positionX: Math.random()*790,
-//     positionY: Math.random()*400,
-//     size: Math.random()*50,
-//     color: "transparent",  
-// }
-
-// let clouds: Cloud [] = [cloud1, cloud2, cloud3]; 
-
-// function drawClouds () {
-//     for (let i:number = 0; i < clouds.length; i++) {
-//         let path = new Path2D;
-//         path.ellipse(clouds[i].positionX, clouds[i].positionY, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
-//         ctx.fillStyle = clouds[i].color;
-//         ctx.fill(path);
-//         for (let c: number = 0; c < 10; c++) {
-//             let path2 = new Path2D;
-//             path2.ellipse((clouds[i].positionX + Math.random()*50 - Math.random()*50), (clouds[i].positionY+Math.random()*50 - Math.random()*50), 50, 75, Math.PI / 4, 0, 2 * Math.PI);
-//             ctx.fillStyle = gradient;
-//             ctx.fill(path2);
-//         }
-//         }  
-// }
-// let clouds: Cloud[] = createClouds(10); 
-// drawClouds();
-
-// function createClouds (_amount: number): Cloud[] {
-//     let clouds: Cloud[];
-//     for (let i:number = 0; i < clouds.length; i++) {
-//         let cloud: Cloud = {
-//             positionX: Math.random()*150,
-//             positionY: Math.random()*500,
-//             size: Math.random()*500, 
-//         }
-//         for (let c: number = 0; c < cloud.size; c++) {
-//             let cloudi = {
-//                 positionX: Math.random()*150,
-//                 positionY: Math.random()*500,
-//                 size: Math.random()*500, 
-//             }
-//         }
-//         clouds.push(cloud);
-//     } 
-//     return clouds; 
-// }
-
+    path.roundRect(_cloud.x, _cloud.y, _cloud.scalex, _cloud.scaley, [40]);
+    ctx.fillStyle = _cloud.color;
+    ctx.fill(path); 
+}
+ 
 function drawClouds (): void {
     for (let i: number = 0; i < clouds.length; i++) {
         let cloud = clouds[i];
-        drawClouds();
+        drawCloud(cloud); 
     }
 }
 
-const speed: number = 0.00000001;
 
-function updateClouds () {
-    for (let i: number = 0; i < clouds.length; i++) {
-    clouds[i].positionX += speed;
-}
-}
+const speedBird: number = 0.001;
 
 function updateBird () {
-    for (let m: number = 0; m < birds.length; m++) {
-    clouds[m].positionX += speed;
+    for (let m: number = 0; m < 8; m++) {
+    clouds[m].x += speedBird;
 }
+}
+
+const speed: number = 0.5;
+
+function updateClouds(){
+    for (let cloud of clouds) {
+        cloud.x += speed;
+        if (cloud.x > canvas.width) {
+            cloud.x = -cloud.scalex;
+        }
+    }
 }
 
 function animationFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.putImageData(imgData, 0, 0);
     updateClouds();
-    updateBird();
     drawClouds();
+    updateBird();
     drawBird();
     requestAnimationFrame(animationFrame);
  }

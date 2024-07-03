@@ -64,6 +64,8 @@ function animationFrame() {
 
  requestAnimationFrame(animationFrame);
 
+
+
 // function rotateClouds (clouds: Cloud): void {
 //     for (let i: number = 0; i < 10; i++) {
 //         ctx.save();

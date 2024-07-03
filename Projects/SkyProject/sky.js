@@ -29,12 +29,29 @@ function drawClouds() {
         drawCloud(cloud);
     }
 }
-function rotateClouds(clouds) {
-    for (var i = 0; i < 10; i++) {
-        ctx.translate(clouds.x, clouds.y);
-        ctx.rotate(Math.PI / 2);
-        ctx.translate(-clouds.x, -clouds.y);
-        drawCloud(clouds);
+var speed = 1;
+function updateClouds() {
+    for (var _i = 0, clouds_1 = clouds; _i < clouds_1.length; _i++) {
+        var cloud = clouds_1[_i];
+        cloud.x += speed;
+        if (cloud.x > canvas.width) {
+            cloud.x = -cloud.scalex;
+        }
     }
 }
-rotateClouds();
+function animationFrame() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    updateClouds();
+    drawClouds();
+    requestAnimationFrame(animationFrame);
+}
+requestAnimationFrame(animationFrame);
+// function rotateClouds (clouds: Cloud): void {
+//     for (let i: number = 0; i < 10; i++) {
+//         ctx.save();
+//         ctx.translate(clouds.x, clouds.y);
+//         ctx.rotate(20*Math.PI / 45);
+//         ctx.translate(-clouds.x, -clouds.y);
+//         ctx.restore(); 
+// }
+// }
