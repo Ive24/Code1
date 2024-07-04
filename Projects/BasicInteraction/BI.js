@@ -8,7 +8,6 @@ canvas.addEventListener("click", function (event) {
     var PosY = (event.clientY - rect.top) * scaleY;
     var shapeType = Math.random() < 0.5 ? "circle" : "square";
     shapes.push({ x: PosX, y: PosY, type: shapeType });
-    //   drawShapes();
 });
 var shapes = [];
 var speed = 0.5;
@@ -17,8 +16,9 @@ function drawShapes() {
     for (var _i = 0, shapes_1 = shapes; _i < shapes_1.length; _i++) {
         var shape = shapes_1[_i];
         shape.y += speed;
-    }
-    if (shapes. > canvas.height) {
+        if (shape.y > canvas.height) {
+            shape.y > canvas.height;
+        }
     }
     shapes.forEach(function (shape) {
         if (shape.type === "circle") {

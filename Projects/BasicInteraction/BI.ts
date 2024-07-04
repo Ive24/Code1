@@ -11,8 +11,6 @@ const ctx = canvas.getContext("2d");
 
       let shapeType = Math.random() < 0.5 ? "circle": "square";
       shapes.push({ x: PosX, y: PosY, type: shapeType });
-
-    //   drawShapes();
 })
 
 
@@ -31,9 +29,9 @@ function drawShapes() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let shape of shapes) {
         shape.y += speed;
-    }
-    if (shapes. > canvas.height) {
-
+        if (shape.y > canvas.height){
+            shape.y > canvas.height;
+        }
     }
 
     shapes.forEach((shape) => {
