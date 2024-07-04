@@ -72,9 +72,9 @@ function drawBird () {
         ctx.fill(pathM);
     }
 }
-     
+
 drawMountain();
-drawBird(); 
+drawBird();
 
 let imgData = ctx.getImageData (0, 0, canvas.width, canvas.height); 
 
@@ -122,13 +122,13 @@ function drawClouds (): void {
 }
 
 
-const speedBird: number = 0.001;
+// const speedBird: number = 0.001;
 
-function updateBird () {
-    for (let m: number = 0; m < 8; m++) {
-    clouds[m].x += speedBird;
-}
-}
+// function updateBird () {
+//     for (let m: number = 0; m < birds.length; m++) {
+//     clouds[m].x += speedBird;
+// }
+// }
 
 const speed: number = 0.5;
 
@@ -146,8 +146,8 @@ function animationFrame() {
     ctx.putImageData(imgData, 0, 0);
     updateClouds();
     drawClouds();
-    updateBird();
-    drawBird();
+    // updateBird();
+    // drawBird();
     requestAnimationFrame(animationFrame);
  }
 

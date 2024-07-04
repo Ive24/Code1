@@ -88,12 +88,12 @@ function drawClouds() {
         drawCloud(cloud);
     }
 }
-var speedBird = 0.001;
-function updateBird() {
-    for (var m = 0; m < 8; m++) {
-        clouds[m].x += speedBird;
-    }
-}
+// const speedBird: number = 0.001;
+// function updateBird () {
+//     for (let m: number = 0; m < birds.length; m++) {
+//     clouds[m].x += speedBird;
+// }
+// }
 var speed = 0.5;
 function updateClouds() {
     for (var _i = 0, clouds_1 = clouds; _i < clouds_1.length; _i++) {
@@ -109,8 +109,8 @@ function animationFrame() {
     ctx.putImageData(imgData, 0, 0);
     updateClouds();
     drawClouds();
-    updateBird();
-    drawBird();
+    // updateBird();
+    // drawBird();
     requestAnimationFrame(animationFrame);
 }
 requestAnimationFrame(animationFrame);

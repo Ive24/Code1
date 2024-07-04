@@ -27,14 +27,15 @@ let speed: number = 0.5;
 
 function drawShapes() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let shape of shapes) {
-        shape.y += speed;
-        if (shape.y > canvas.height){
-            shape.y > canvas.height;
-        }
-    }
 
     shapes.forEach((shape) => {
+
+        if (shape.y <= canvas.height - 40){
+            shape.y += speed;
+        }
+        if (shape.y > canvas.height){
+            shape.y = canvas.height + 50;
+        }
 
         if (shape.type === "circle") {
             ctx.beginPath();

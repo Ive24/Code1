@@ -13,14 +13,13 @@ var shapes = [];
 var speed = 0.5;
 function drawShapes() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var _i = 0, shapes_1 = shapes; _i < shapes_1.length; _i++) {
-        var shape = shapes_1[_i];
-        shape.y += speed;
-        if (shape.y > canvas.height) {
-            shape.y > canvas.height;
-        }
-    }
     shapes.forEach(function (shape) {
+        if (shape.y <= canvas.height - 40) {
+            shape.y += speed;
+        }
+        if (shape.y > canvas.height) {
+            shape.y = canvas.height + 50;
+        }
         if (shape.type === "circle") {
             ctx.beginPath();
             ctx.arc(shape.x, shape.y, 20, 0, 2 * Math.PI);
